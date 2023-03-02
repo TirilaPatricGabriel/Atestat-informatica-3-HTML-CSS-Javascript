@@ -1,0 +1,189 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #990011FF;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #FCEDDA;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul{
+    list-style-type: none;
+}
+nav > ul > li{
+    margin-right: 80px;
+    display: inline;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: #994738;
+    border: 2px solid #994738;
+    border-radius: 4px;
+    padding: 7px 14px;
+}
+
+nav > ul > li > a:hover{
+    background-color: #994738;
+    color: #FCEDDA;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1420px){
+    nav > ul > li{
+        margin-right: 10px;
+    }
+}
+
+#continut{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.continut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.paragraf{
+    word-wrap: break-word;
+}
+
+.parinte-expand{
+    margin-top: 30px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+.parinte-scriitor{
+    width: 100%;
+    border-radius: 1%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FCEDDA;
+}
+.parinte-scriitor > .coloana1{
+    width: 30%;
+    margin-right: 5%;
+}
+.parinte-scriitor > .coloana2{
+    width: 30%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.parinte-scriitor > .coloana3{
+    width: 30%;
+}
+
+.coloana1 .sus{
+    width: 100%;
+}
+.coloana1 .jos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.coloana3.sus{
+    width: 100%;
+    height:50%;
+}
+.coloana3.jos{
+    width: 100%;
+    height: 50%;
+}
+
+.imagine-scriitor{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.buton{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #c84137;
+    text-align: left;
+    transform: background 0.2s;
+    color: black;
+}
+
+.buton::after{
+    content: '\21E9';
+    float: right;
+    transform: scale(1.5);
+}
+.buton::before{
+    content: '\21E9';
+    float: left;
+    transform: scale(1.5);
+}
+
+.content{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    padding: 0 15px;
+    font-family: sans-serif;
+    background: #da8d90;
+}
+
+.buton_activ::before{
+    content: '\21E7';
+}
+.buton_activ::after{
+    content: '\21E7';
+}
+
+.buton_activ{
+    background: #cb6166;
+}
+
+.img{
+    width: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
